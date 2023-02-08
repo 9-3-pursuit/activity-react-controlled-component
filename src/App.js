@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import QueueSignupForm from "./QueueSignupForm.js";
+import Queue from "./Queue.js";
+import "./App.css";
+import { useState } from "react";
 
 function App() {
+  const [queue, setQueue] = useState([
+    { name: "Myra", helpTopic: "Designing a grid template for my app" },
+  ]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="Header">
+        <h1>Help Request Queue</h1>
       </header>
+      <QueueSignupForm setQueue={setQueue} />
+      <Queue queue={queue} />
     </div>
   );
 }

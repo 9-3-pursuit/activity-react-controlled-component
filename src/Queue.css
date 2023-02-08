@@ -1,0 +1,7 @@
+.Queue {
+    border: 1px solid gray;
+}
+
+.Queue ul {
+    list-style: none;
+}

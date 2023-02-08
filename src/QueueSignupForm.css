@@ -1,0 +1,17 @@
+.QueueSignupForm {
+    border: 1px solid gray;
+    padding: 20px;
+    max-width: 650px;
+}
+
+.QueueSignupForm form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    min-height: 150px;
+    justify-content: space-around;
+}
+
+.QueueSignupForm input[type="text"] {
+    min-height: 25px;
+}
